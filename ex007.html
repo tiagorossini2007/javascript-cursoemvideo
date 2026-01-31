@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IMIGRAÇÃO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        input[type="button"] {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #003d80;
+        }
+        div#res {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Questionário</h1>
+    <div id="res"></div>
+    <script>
+        function verificar() {
+            var país = window.prompt('Qual país você habita?');
+            var res = document.querySelector('div#res');
+            if (país === 'Brasil' || país === 'brasil'    || país === 'BRASIL') {
+                res.innerHTML = '<p>Você é Brasileiro!</p>';
+            } else {
+                res.innerHTML = '<p>Você é estrangeiro!</p>';
+      
+            }
+        }
+
+
+        verificar();
+    </script>
+</body>
+</html>
