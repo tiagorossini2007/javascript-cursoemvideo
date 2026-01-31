@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Vamos contar</h1>
+        <form id="formulario">
+            <label for="inicio">Início:</label>
+            <input type="number" id="inicio" name="inicio" placeholder="Digite o início">
+
+            <label for="fim">Fim:</label>
+            <input type="number" id="fim" name="fim" placeholder="Digite o fim">
+
+            <label for="passo">Passo:</label>
+            <input type="number" id="passo" name="passo" placeholder="Digite o passo">
+
+            <button type="button" id="contar">Contar</button>
+        </form>
+        <div id="resultado">
+            <p>Contando:</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contar').addEventListener('click', function() {
+            const inicio = document.getElementById('inicio').value;
+            const fim = document.getElementById('fim').value;
+            const passo = document.getElementById('passo').value;
+
+            if (!inicio || !fim) {
+                alert('Por favor, preencha os campos de início e fim.');
+                return;
+            }
+
+            // Chama a função de contagem do script.js
+            contar(inicio, fim, passo);
+        });
+    </script>
+</body>
+</html>

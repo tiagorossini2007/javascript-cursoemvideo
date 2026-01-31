@@ -1,0 +1,66 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styling */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    background: #2575fc;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #6a11cb;
+}
